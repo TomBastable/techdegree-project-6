@@ -1,6 +1,7 @@
 # Project 6 - The API Awakens
 
 Grade Attempted: Exceeds Expectations
+Grade Achieved: Exceeds Expectations
 
 Project Brief:
 
