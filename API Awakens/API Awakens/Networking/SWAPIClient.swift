@@ -78,7 +78,7 @@ class SWAPIClient {
     func performRequest(with endpoint: URLRequest, completion: @escaping (Results?, retrievalStatus?, SWAPIError?) -> Void) {
         
         let task = downloader.jsonTask(with: endpoint) { json, status, error in
-            DispatchQueue.main.async {
+            
                 guard let json = json else {
                    
                     completion(nil, nil, error)
@@ -91,7 +91,7 @@ class SWAPIClient {
                     return
                 }
                 completion(results, status, nil)
-            }
+            
         }
         
         task.resume()
